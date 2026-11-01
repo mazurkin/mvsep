@@ -1,0 +1,14 @@
+/.idea
+/*.iml
+/*.ipr
+/*.iws
+
+/zfturbo-mvsep/models/*
+
+.ipynb_checkpoints
+__pycache__
+
+*.pth
+*.wav
+*.mp3
+*.ogg

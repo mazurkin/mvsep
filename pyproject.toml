@@ -1,0 +1,53 @@
+[tool.poetry]
+name = "mvsep-envrironment"
+version = "0.1.0"
+description = "mvsep envrironment project"
+authors = ["Nick Mazurkin <mazurkin@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.12.*"
+
+[tool.poetry.group.platform.dependencies]
+setuptools = "84.2.1"
+pip = "26.2.2"
+
+[tool.poetry.group.util.dependencies]
+tqdm = "4.67.1"
+argh = "0.29.4"
+
+[tool.poetry.group.pytorch.dependencies]
+torch = {url="https://download-r2.pytorch.org/whl/cu124/torch-2.5.1%2Bcu124-cp312-cp312-linux_x86_64.whl"}
+torchaudio = {url="https://download-r2.pytorch.org/whl/cu124/torchaudio-2.5.1%2Bcu124-cp312-cp312-linux_x86_64.whl"}
+torchcodec = {url="https://download.pytorch.org/whl/cu124/TorchCodec-0.2.1%2Bcu124-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"}
+
+[tool.poetry.group.support.dependencies]
+soundfile = "0.14.0"
+numpy = "2.5.4"
+scipy = "1.18.1"
+librosa = "0.10.2"
+demucs = "4.0.1"
+onnxruntime-gpu = "1.25.1"
+pyqt5 = "5.15.11"
+gradio = "3.27.0"
+matplotlib = "3.8.4"
+
+[tool.poetry.group.format.dependencies]
+pyarrow = "22.0.0"
+pyyaml = "6.0.3"
+
+[tool.poetry.group.dev-lint.dependencies]
+flake8 = "7.3.0"
+pylint = "4.0.4"
+
+[tool.poetry.group.dev-test.dependencies]
+pytest = "8.4.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+markers = [
+    "slow: the tests takes a long time (deselect with '-m \"not long\"')",
+]
