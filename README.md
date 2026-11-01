@@ -2,6 +2,14 @@
 
 Conda environment and bootstrap scripts for [ZFTurbo MVSEP](https://github.com/ZFTurbo/MVSEP-MDX23-music-separation-model)
 
+## clone
+
+Clone with the submodules.
+
+```shell
+git clone --recurse-submodules git@github.com:mazurkin/mvsep.git
+```
+
 ## install
 
 ```shell
